@@ -11,7 +11,7 @@ var DB *gorm.DB
 
 func ConnectToDB() {
 	var err error
-	dsn := "postgresql://store_owner:Ne4vQbT3aRjC@ep-twilight-sound-a1kbw9sd.ap-southeast-1.aws.neon.tech/gin?sslmode=require"
+	dsn := "load db string from env here"
 	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 
 	if err != nil {
